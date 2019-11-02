@@ -5,6 +5,7 @@
 #include <iostream>
 #include "Person.h"
 #include "Tweeter.h"
+#include "Status.h"
 
 using std::string;
 using std::cout;
@@ -25,6 +26,12 @@ int main()
 	}
 	string name = p1.getName();
 	cout << "Prima persoana: " << name << endl;
+
+	Status s = Pending;
+	s = ok;
+
+	FileError fe = FileError::nok;
+	NetworkError ne = NetworkError::ok;
 
 	return 0;
 }

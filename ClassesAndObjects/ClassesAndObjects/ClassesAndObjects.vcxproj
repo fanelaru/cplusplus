@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Person.h" />
+    <ClInclude Include="Status.h" />
     <ClInclude Include="Tweeter.h" />
   </ItemGroup>
   <ItemGroup>
