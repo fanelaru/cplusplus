@@ -7,7 +7,7 @@
 
 int main()
 {
-	Person p1("Andrei", "Popescu"), p2("Stefan", "Boros");
+	Person p1("Andrei", "Popescu", 12), p2();
 	string name = p1.getName();
 	std::cout << "Prima persoana: " << name << endl;
 }

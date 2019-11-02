@@ -9,8 +9,8 @@ private:
 	string lastname;
 	int arbno;
 public:
-	Person();
-	Person(string a, string b);
+	Person()=default;
+	Person(string a, string b, int c);
 	string getName();
 	~Person();
 };
