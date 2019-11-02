@@ -5,11 +5,20 @@
 #include <iostream>
 #include "Person.h"
 
+using std::string;
+using std::cout;
+using std::endl;
+
 int main()
 {
-	Person p1("Andrei", "Popescu", 12), p2();
+	Person p1("Andrei", "Popescu", 12);
+	{
+		Person p2;
+	}
 	string name = p1.getName();
 	std::cout << "Prima persoana: " << name << endl;
+
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

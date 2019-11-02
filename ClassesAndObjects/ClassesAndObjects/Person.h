@@ -1,17 +1,16 @@
 #pragma once
 #include <string>
-using namespace std;
 
 class Person
 {
 private:
-	string firstname;
-	string lastname;
+	std::string firstname;
+	std::string lastname;
 	int arbno;
 public:
-	Person()=default;
-	Person(string a, string b, int c);
-	string getName();
+	Person();
+	Person(std::string a, std::string b, int c);
+	std::string getName();
 	~Person();
 };
 
