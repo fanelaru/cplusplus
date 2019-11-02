@@ -8,6 +8,7 @@
 
 using std::string;
 using std::cout;
+using std::cin;
 using std::endl;
 
 int main()
@@ -16,9 +17,14 @@ int main()
 	{
 		Tweeter t1("Razvan", "Ionescu", 123, "@rionescu");
 		string name2 = t1.getName();
+		cout << t1.getTweeter() << endl;
+		string newtweet;
+		cin >> newtweet;
+		t1.setTweeter(newtweet);
+		cout << t1.getTweeter() << endl;
 	}
 	string name = p1.getName();
-	std::cout << "Prima persoana: " << name << endl;
+	cout << "Prima persoana: " << name << endl;
 
 	return 0;
 }

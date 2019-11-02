@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Tweeter.h"
 #include <iostream>
+#include <string>
 
 
 Tweeter::Tweeter(std::string first, std::string last, int arbno, std::string handle)
@@ -14,4 +15,14 @@ Tweeter::Tweeter(std::string first, std::string last, int arbno, std::string han
 Tweeter::~Tweeter()
 {
 	std::cout << "destructing tweeter " << tweeterhandle << std::endl;
+}
+
+std::string Tweeter::getTweeter()
+{
+	return tweeterhandle;
+}
+
+void Tweeter::setTweeter(std::string const a)
+{
+	tweeterhandle = a;
 }
