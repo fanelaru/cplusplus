@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Person.h" />
+    <ClInclude Include="Tweeter.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ClassesAndObjects.cpp" />
@@ -163,6 +164,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Person.cpp" />
+    <ClCompile Include="Tweeter.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

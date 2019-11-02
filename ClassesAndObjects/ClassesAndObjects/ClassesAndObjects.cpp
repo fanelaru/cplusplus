@@ -4,6 +4,7 @@
 #include "pch.h"
 #include <iostream>
 #include "Person.h"
+#include "Tweeter.h"
 
 using std::string;
 using std::cout;
@@ -13,7 +14,8 @@ int main()
 {
 	Person p1("Andrei", "Popescu", 12);
 	{
-		Person p2;
+		Tweeter t1("Razvan", "Ionescu", 123, "@rionescu");
+		string name2 = t1.getName();
 	}
 	string name = p1.getName();
 	std::cout << "Prima persoana: " << name << endl;
