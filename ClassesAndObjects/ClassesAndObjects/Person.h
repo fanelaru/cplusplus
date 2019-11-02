@@ -10,7 +10,9 @@ private:
 public:
 	Person();
 	Person(std::string a, std::string b, int c);
-	std::string getName();
+	std::string getName() const;
+	void setNumber(int a) { arbno = a; };
+	int getNumber() const { return arbno;}
 	~Person();
 };
 

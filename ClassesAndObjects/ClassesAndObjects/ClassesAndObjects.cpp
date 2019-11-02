@@ -18,6 +18,7 @@ int main()
 	{
 		Tweeter t1("Razvan", "Ionescu", 123, "@rionescu");
 		string name2 = t1.getName();
+		t1.setNumber(10); //setter inline
 		cout << t1.getTweeter() << endl;
 		string newtweet;
 		cin >> newtweet;
@@ -25,7 +26,8 @@ int main()
 		cout << t1.getTweeter() << endl;
 	}
 	string name = p1.getName();
-	cout << "Prima persoana: " << name << endl;
+	p1.setNumber(15);
+	cout << "Prima persoana: " << name << " No " << p1.getNumber() << endl;
 
 	Status s = Pending;
 	s = ok;

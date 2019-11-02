@@ -17,12 +17,12 @@ Tweeter::~Tweeter()
 	std::cout << "destructing tweeter " << tweeterhandle << std::endl;
 }
 
-std::string Tweeter::getTweeter()
+std::string Tweeter::getTweeter() const
 {
 	return tweeterhandle;
 }
 
-void Tweeter::setTweeter(std::string const a)
+void Tweeter::setTweeter(std::string a)
 {
 	tweeterhandle = a;
 }

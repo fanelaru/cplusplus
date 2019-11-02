@@ -22,6 +22,8 @@ Person::~Person()
 	cout << "destructing " << firstname << " " << lastname << endl;
 }
 
-std::string Person::getName(){
+// good practice to make the getter const
+std::string Person::getName() const
+{
 	return (firstname + " " + lastname);
 }
