@@ -15,6 +15,8 @@ using std::endl;
 int main()
 {
 	Person p1("Andrei", "Popescu", 12);
+    Person p2("Andrei", "Ionescu", 120);
+    Person p3("Andrei", "Georgescu", 1200);
 	{
 		Tweeter t1("Razvan", "Ionescu", 123, "@rionescu");
 		string name2 = t1.getName();
@@ -35,16 +37,20 @@ int main()
 	FileError fe = FileError::nok;
 	NetworkError ne = NetworkError::ok;
 
+    if (p1 < p2)
+        cout << "yes" << endl;
+    else
+        cout << "no" << endl;
+
+    if (p1 < 10)
+        cout << "yes" << endl;
+    else
+        cout << "no" << endl;
+
+    if (100 < p1)
+        cout << "yes" << endl;
+    else
+        cout << "no" << endl;
+
 	return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

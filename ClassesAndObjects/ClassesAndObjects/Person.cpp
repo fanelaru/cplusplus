@@ -27,3 +27,24 @@ std::string Person::getName() const
 {
 	return (firstname + " " + lastname);
 }
+
+// const function involves const obj
+bool Person::operator<(Person const& p) const
+{
+    return arbno < p.arbno;
+}
+bool Person::operator<(int i) const
+{
+    return i < arbno;
+}
+
+//bool operator<(int i, Person const& p)
+//{
+//    return i < p.getNumber();
+//}
+
+// because is declare as friend of class can have access to private data
+bool operator<(int i, Person const& p)
+{
+    return i < p.arbno;
+}
