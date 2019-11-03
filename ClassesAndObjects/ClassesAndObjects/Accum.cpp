@@ -13,6 +13,8 @@ void testTemplates()
     std::cout << integers.getTotal() << std::endl;
 
     Accum<std::string> strings("");
+    //in compilatoarele noi ar trebui sa mearga
+    //Accum strings(std::string(""));
     strings += "ahoy ";
     strings += "world";
     std::cout << strings.getTotal() << std::endl;
