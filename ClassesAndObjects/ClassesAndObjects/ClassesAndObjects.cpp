@@ -60,6 +60,9 @@ int main()
 
     cout << max(33, 34) << endl;
     cout << max<double>(33.5, 2) << endl;
-
+    string s1 = "maxim", s2 = "minimum";
+    cout << "max of " << s1 << " and " << s2 << " is " << max(s1, s2) << endl;
+    cout << "max of " << p1.getNumber() << " and " << p2.getNumber() << " is " << max(p1, p2).getNumber() << endl;
+    cout << "max of " << p1.getName() << " and " << p2.getName() << " is " << max(p1, p2).getName() << endl;
 	return 0;
 }
