@@ -12,6 +12,12 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+template <class T>
+T max(T const& t1, T const& t2)
+{
+    return t1 < t2 ? t2 : t1;
+}
+
 int main()
 {
 	Person p1("Andrei", "Popescu", 12);
@@ -51,6 +57,9 @@ int main()
         cout << "yes" << endl;
     else
         cout << "no" << endl;
+
+    cout << max(33, 34) << endl;
+    cout << max<double>(33.5, 2) << endl;
 
 	return 0;
 }
