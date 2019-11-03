@@ -6,6 +6,7 @@
 #include "Person.h"
 #include "Tweeter.h"
 #include "Status.h"
+#include "Accum.h"
 
 using std::string;
 using std::cout;
@@ -64,5 +65,8 @@ int main()
     cout << "max of " << s1 << " and " << s2 << " is " << max(s1, s2) << endl;
     cout << "max of " << p1.getNumber() << " and " << p2.getNumber() << " is " << max(p1, p2).getNumber() << endl;
     cout << "max of " << p1.getName() << " and " << p2.getName() << " is " << max(p1, p2).getName() << endl;
+
+    testTemplates();
+
 	return 0;
 }

@@ -43,7 +43,7 @@ bool Person::operator<(int i) const
 //    return i < p.getNumber();
 //}
 
-// because is declare as friend of class can have access to private data
+// because is declared as friend of class can have access to private data
 bool operator<(int i, Person const& p)
 {
     return i < p.arbno;

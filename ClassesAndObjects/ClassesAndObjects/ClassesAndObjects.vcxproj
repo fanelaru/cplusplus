@@ -151,12 +151,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Accum.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Status.h" />
     <ClInclude Include="Tweeter.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Accum.cpp" />
     <ClCompile Include="ClassesAndObjects.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
