@@ -68,5 +68,11 @@ int main()
 
     testTemplates();
 
+    Person p5("Fane", "Babanu", 45);
+    Person* pPerson = &p5;
+    string realName = pPerson->getName();
+
+    cout << realName << endl;
+
 	return 0;
 }
