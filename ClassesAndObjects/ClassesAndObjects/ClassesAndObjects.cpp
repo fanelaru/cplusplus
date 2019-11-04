@@ -21,7 +21,7 @@ T max(T const& t1, T const& t2)
 
 int main()
 {
-	Person p1("Andrei", "Popescu", 12);
+    Person p1("Andrei", "Popescu", 12);
     Person p2("Andrei", "Ionescu", 120);
     Person p3("Andrei", "Georgescu", 1200);
 	{
@@ -68,8 +68,7 @@ int main()
 
     testTemplates();
 
-    Person p5("Fane", "Babanu", 45);
-    Person* pPerson = &p5;
+    Person* pPerson = &p1;
     string realName = pPerson->getName();
 
     cout << realName << endl;
