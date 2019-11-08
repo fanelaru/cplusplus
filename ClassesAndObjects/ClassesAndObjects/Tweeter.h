@@ -1,5 +1,7 @@
 #pragma once
 #include "Person.h"
+// #include <string> - este in Person.h
+
 class Tweeter :
 	public Person
 {

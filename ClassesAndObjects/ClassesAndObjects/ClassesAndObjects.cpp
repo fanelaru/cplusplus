@@ -7,12 +7,14 @@
 #include "Tweeter.h"
 #include "Status.h"
 #include "Accum.h"
+#include "Resource.h"
 
 using std::string;
 using std::cout;
 using std::cin;
 using std::endl;
 
+// template function
 template <class T>
 T max(T const& t1, T const& t2)
 {
@@ -69,9 +71,41 @@ int main()
     testTemplates();
 
     Person* pPerson = &p1;
+    // string realName = (*pPerson).getName();
     string realName = pPerson->getName();
 
     cout << realName << endl;
+
+    int* badPointer=nullptr;
+    if (badPointer)
+    {
+        *badPointer = 3;
+    }
+
+    // in C++ trebuie initializata. In C, nu!
+    // int * const cpI;
+    
+    Person * const cpI=&p2;
+    cout << cpI->getName() << endl;
+
+    {
+        Resource localResource("gigi marga");
+        string localString = localResource.getName();
+        cout << localString << endl;
+    }
+
+    Resource* pResource = new Resource("fane babanu");
+    string newString = pResource->getName();
+
+    cout << newString << endl;
+
+    Resource* pResource_2 = pResource;
+
+    delete pResource;
+    pResource = nullptr;
+
+    delete pResource;
+    delete pResource_2;
 
 	return 0;
 }

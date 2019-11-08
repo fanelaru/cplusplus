@@ -154,6 +154,7 @@
     <ClInclude Include="Accum.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Person.h" />
+    <ClInclude Include="Resource.h" />
     <ClInclude Include="Status.h" />
     <ClInclude Include="Tweeter.h" />
   </ItemGroup>
@@ -167,6 +168,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Person.cpp" />
+    <ClCompile Include="Resource.cpp" />
     <ClCompile Include="Tweeter.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
