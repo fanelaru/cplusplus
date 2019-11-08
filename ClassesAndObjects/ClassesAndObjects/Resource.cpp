@@ -4,7 +4,7 @@
 
 Resource::Resource(std::string n):name(n)
 {
-    std::cout << "constructor" << std::endl;
+    std::cout << "constructor Resource" << std::endl;
 }
 
 std::string Resource::getName() const
@@ -14,5 +14,5 @@ std::string Resource::getName() const
 
 Resource::~Resource()
 {
-    std::cout << "destructor" << std::endl;
+    std::cout << "destructor Resource" << std::endl;
 }

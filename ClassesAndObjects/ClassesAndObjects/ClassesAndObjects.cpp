@@ -26,6 +26,7 @@ int main()
     Person p1("Andrei", "Popescu", 12);
     Person p2("Andrei", "Ionescu", 120);
     Person p3("Andrei", "Georgescu", 1200);
+    p3.AddResource();
 	{
 		Tweeter t1("Razvan", "Ionescu", 123, "@rionescu");
 		string name2 = t1.getName();
@@ -104,8 +105,9 @@ int main()
     delete pResource;
     pResource = nullptr;
 
-    delete pResource;
-    delete pResource_2;
+    delete pResource; // nu crapa pentru ca nullptr
+    // crash
+    // delete pResource_2;
 
 	return 0;
 }
