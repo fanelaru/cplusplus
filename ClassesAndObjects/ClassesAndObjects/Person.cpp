@@ -24,7 +24,7 @@ Person::~Person()
 }
 
 // Copy ctor
-Person::Person(Person const& p)
+Person::Person(Person const & p)
 {
     pR = new Resource(p.pR->getName());
 }
@@ -44,7 +44,7 @@ std::string Person::getName() const
 }
 
 // const function involves const obj
-bool Person::operator<(Person const& p) const
+bool Person::operator<(Person const & p) const
 {
     return arbno < p.arbno;
 }
@@ -53,19 +53,21 @@ bool Person::operator<(int i) const
     return i < arbno;
 }
 
-void Person::AddResource()
+void Person::addResource()
 {
     delete pR;
     pR = new Resource("Resursa pentru " + getName());
 }
 
+// daca nu e declarat ca friend al clasei nu poate folosi decit metode
+// publice
 //bool operator<(int i, Person const& p)
 //{
 //    return i < p.getNumber();
 //}
 
 // because is declared as friend of class can have access to private data
-bool operator<(int i, Person const& p)
+bool operator<(int i, Person const & p)
 {
     return i < p.arbno;
 }

@@ -3,6 +3,7 @@
 
 #include "pch.h"
 #include <iostream>
+#include <istream>
 #include "Person.h"
 #include "Tweeter.h"
 #include "Status.h"
@@ -10,9 +11,20 @@
 #include "Resource.h"
 
 using std::string;
+using std::istream;
 using std::cout;
 using std::cin;
+using std::cerr;
 using std::endl;
+
+void readAndPrint(istream& is)
+{
+    int x;
+    if (is >> x)
+        cout << "the int is " << x << endl;
+    else
+        cerr << "no int on input" << endl;
+}
 
 // template function
 template <class T>
@@ -26,7 +38,10 @@ int main()
     Person p1("Andrei", "Popescu", 12);
     Person p2("Andrei", "Ionescu", 120);
     Person p3("Andrei", "Georgescu", 1200);
-    p3.AddResource();
+    p3.addResource();
+    p3.setFirstName("Gigel");
+    p3.addResource();
+    Person p4 = p3;
 	{
 		Tweeter t1("Razvan", "Ionescu", 123, "@rionescu");
 		string name2 = t1.getName();
