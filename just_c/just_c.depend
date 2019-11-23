@@ -1,5 +1,11 @@
 # depslib dependency file v1.0
-1573241185 source:o:\proiecter\cplusplus\just_c\main.c
+1574456905 source:o:\proiecter\cplusplus\just_c\main.c
 	<stdio.h>
 	<stdlib.h>
+
+1573760333 source:o:\proiecter\cplusplus\just_c\second.c
+	<stdio.h>
+	"second.h"
+
+1573758659 o:\proiecter\cplusplus\just_c\second.h
 

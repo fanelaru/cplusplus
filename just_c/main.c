@@ -2,9 +2,13 @@
 #include <stdlib.h>
 
 typedef struct {
-    int age, marks;
-    char name[20];
-} student;
+    union {
+        int biologie;
+        int fizica;
+    } note;
+    int age;
+    char *name;
+} elev;
 
 int int_sorter( const void *first_arg, const void *second_arg )
 {
@@ -36,8 +40,10 @@ int tipareste( int array[] )
 void displayNumbers(int num[2][2])
 {
     printf("Displaying:\n");
-    for (int i = 0; i < 2; ++i) {
-        for (int j = 0; j < 2; ++j) {
+    for (int i = 0; i < 2; ++i)
+    {
+        for (int j = 0; j < 2; ++j)
+        {
            printf("%d\n", num[i][j]);
         }
     }
@@ -50,6 +56,16 @@ int main()
     qsort( array, 10 , sizeof( int ), int_sorter );
     tipareste( array );
 
+    elev *pCatalog;
+    pCatalog = malloc(sizeof(elev));
+    pCatalog->name = malloc(10*sizeof(char));
+
+    for (int i=0; i<2; i++) {
+        scanf("%d %d", &pCatalog->age, &pCatalog->note.fizica);
+        scanf("%s", pCatalog->name);
+    }
+
+    printf("Student %s %d %d\n", pCatalog->name, pCatalog->age, pCatalog->note.biologie);
     int num[2][2];
     printf("Enter 4 numbers:\n");
     for (int i = 0; i < 2; ++i)

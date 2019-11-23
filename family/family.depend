@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1572641112 source:o:\proiecter\cplusplus\family\daughter.cpp
+	"Daughter.h"
+
+1572641112 o:\proiecter\cplusplus\family\daughter.h
+
+1572641094 source:o:\proiecter\cplusplus\family\mother.cpp
+	"Mother.h"
+
+1572641094 o:\proiecter\cplusplus\family\mother.h
+
+1574103562 source:o:\proiecter\cplusplus\family\main.cpp
+	<iostream>
+
