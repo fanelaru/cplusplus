@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1576005662 source:o:\proiecter\cplusplus\queen_problem\kt.c
+	<stdio.h>
+	"kt.h"
+
+1576005595 o:\proiecter\cplusplus\queen_problem\kt.h
+
+1576005531 source:o:\proiecter\cplusplus\queen_problem\main.c
+	"kt.h"
+	"qp.h"
+
+1576005624 o:\proiecter\cplusplus\queen_problem\qp.h
+	<stdbool.h>
+
+1576005648 source:o:\proiecter\cplusplus\queen_problem\qp.c
+	<stdio.h>
+	"qp.h"
+
