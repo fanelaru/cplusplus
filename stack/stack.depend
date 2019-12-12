@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1576173640 source:o:\proiecter\cplusplus\stack\linkedlist.cpp
+	<bits/stdc++.h>
+	"linkedlist.h"
+
+1576173791 source:o:\proiecter\cplusplus\stack\main.cpp
+	<bits/stdc++.h>
+	"stack.h"
+	"linkedlist.h"
+
+1576177732 o:\proiecter\cplusplus\stack\stack.h
+
+1576176465 o:\proiecter\cplusplus\stack\linkedlist.h
+
+1576173892 source:o:\proiecter\cplusplus\stack\stack.cpp
+	<bits/stdc++.h>
+	"stack.h"
+	"linkedlist.h"
+

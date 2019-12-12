@@ -1,5 +1,6 @@
 #ifndef QP_H_INCLUDED
 #define QP_H_INCLUDED
+#include <stdio.h>
 #include <stdbool.h>
 
 bool solveNQ();

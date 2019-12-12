@@ -1,8 +1,7 @@
 /* C/C++ program to solve N Queen Problem using backtracking */
-#include <stdio.h>
 #include "qp.h"
 
-#define N 6
+#define N 4
 
 /* A utility function to print solution */
 static void printSolution(int board[N][N])

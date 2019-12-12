@@ -1,7 +1,7 @@
 #include "kt.h"
 #include "qp.h"
 
-// driver program to test above function
+// driver program
 int main()
 {
 	solveNQ();
